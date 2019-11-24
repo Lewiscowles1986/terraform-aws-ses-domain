@@ -46,13 +46,13 @@ variable "ses_rule_set" {
 
 variable "enable_incoming_email" {
   description = "Control whether or not to handle incoming emails"
-  type        = "string"
+  type        = string
   default     = true
 }
 
 variable "custom_spf" {
   description = "If you use other third-party email services, you might use this to ensure you only have a single DNS SPF record"
-  type        = "string"
+  type        = string
   default     = "v=spf1 include:amazonses.com -all"
 }
 
